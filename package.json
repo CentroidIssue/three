@@ -1,43 +1,46 @@
 {
   "name": "three",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.119",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "tsc -w & vite --host 0.0.0.0 --port 8888 --config vite.config.dev.ts",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite --config vite.config.prod.ts preview",
+    "build": "tsc && vite --config vite.config.prod.ts build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/node": "^20.14.5",
+    "@types/three": "^0.170.0",
+    "@vercel/speed-insights": "^1.1.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "gsap": "^3.12.5",
+    "npm": "^10.8.1",
+    "postcss": "^8.4.38",
+    "react": "link:@vercel/speed-insights/react",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "react-split": "^2.0.14",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "uuid": "^10.0.0",
+    "vite": "^5.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@gsap/react": "^2.1.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6"
   }
 }

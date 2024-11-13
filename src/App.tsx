@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, createRoutesFromElements, Route, Navigate, RouterProvider, Outlet } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import Planet from './Planet';
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/">
+      <Route path='/planet' element={<Planet></Planet>} />
+    </Route>
+  )
+);
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SpeedInsights />
+      <RouterProvider router={router} />
+    </>
   );
 }
 
-export default App;
+export default App

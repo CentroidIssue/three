@@ -1,0 +1,27 @@
+import stars from "/assets/planet/stars.jpg";
+import earth from "/assets/planet/earth.jpg";
+import mars from "/assets/planet/mars.jpg";
+import jupiter from "/assets/planet/jupiter.jpg";
+import saturn from "/assets/planet/saturn.jpg";
+import uranus from "/assets/planet/uranus.jpg";
+import neptune from "/assets/planet/neptune.jpg";
+import pluto from "/assets/planet/pluto.jpg";
+import sun from "/assets/planet/sun.jpg";
+import mercury from "/assets/planet/mercury.jpg";
+import venus from "/assets/planet/venus.jpg";
+import saturn_ring from "/assets/planet/saturn ring.jpg";
+import uranus_ring from "/assets/planet/uranus ring.jpg";
+
+export const starsImg = stars;
+export const earthImg = earth;
+export const marsImg = mars;
+export const jupiterImg = jupiter;
+export const saturnImg = saturn;
+export const uranusImg = uranus;
+export const neptuneImg = neptune;
+export const plutoImg = pluto;
+export const sunImg = sun;
+export const mercuryImg = mercury;
+export const venusImg = venus;
+export const saturnRingImg = saturn_ring;
+export const uranusRingImg = uranus_ring;
